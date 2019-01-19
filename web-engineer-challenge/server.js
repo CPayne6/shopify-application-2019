@@ -10,6 +10,8 @@ app.set('views', __dirname + '/views');
 app.engine('html', ejs.renderFile);
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + '/res'));
+
 require("./app/routes.js")(app);
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

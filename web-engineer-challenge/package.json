@@ -1,7 +1,10 @@
 {
   "name": "web-engineer-challenge",
   "version": "1.0.0",
-  "main": "setver.js",
+  "main": "server.js",
+  "scripts":{
+    "start": "node server.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",

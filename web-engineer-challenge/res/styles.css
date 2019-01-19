@@ -1,37 +1,97 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Style the search field */
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  /* Style the submit button */
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none; /* Prevent double borders */
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  /* Clear floats */
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+body {
+  background-image:url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 800px;
+}
+
+.header {
+  padding:10px;
+  text-align: center;
+  background: white;
+  color: grey;
+  font-size: 30px;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+  border-color: grey;
+  border-width: 1px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index:9999 !important;
+}
+
+.content {
+  width: 98%;
+  max-width: 1400px;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.search-container {
+  padding: 30px;
+  width: 70%;
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 15px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.favourite-container {
+  padding: 30px;
+  width: 29%;
+  height: calc(100vh - 150px); 
+  background-color: rgb(255,255,255,0.8);
+  border-radius: 15px;
+  display:inline-block;
+  vertical-align: top;
+  overflow: auto;
+  position: fixed;
+  margin-left: 5px;
+}
+
+.favourite-result {
+
+}
+
+.favourite-icon {
+  width: 32px;
+  height: 32px;
+  display:inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.search-result {
+
+}
+
+.title{
+  display:inline-block;
+  width:75%;
+  vertical-align: middle;
+}
+
+.left-column {
+  width: 50%;
+  display: inline-block;
+}
+
+.right-column {
+  width: 50%;
+  display: inline-block;
+}
+
+.row-item {
+  width: 100%;
+  margin:auto;
+}
+
+.row-space{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-top: 1px solid grey; 
+}
