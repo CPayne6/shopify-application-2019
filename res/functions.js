@@ -37,7 +37,7 @@ function generateFavourites(){
         });
     }
     else{
-        favContainer.innerHTML = '<h3>Your favourite items will show up here for easy access!</h3>';
+        favContainer.innerHTML = '<h3>Your favourite items will show up here for easy access!</h3><h3>Click on a star to favourite an item!</h3>';
     }
 }
 
@@ -76,7 +76,7 @@ function postToServer(url,callBack,data){
 
 function generateSearchResult(res){
     searchArr = {};
-
+    favArr = {};
     var container = document.getElementsByClassName('search-result')[0];
 
     var newContainer = document.createElement('div');
