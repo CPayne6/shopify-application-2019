@@ -34,7 +34,6 @@ function getFile(){
 function writeFile(fileData){
     try{
         fs.writeFileSync(fileName, JSON.stringify(fileData));
-        console.log('file updated\n'+fileData);
         return true;
     }
     catch(e){
@@ -44,7 +43,6 @@ function writeFile(fileData){
 
 function isFavouriteNative(lookup,obj){
     if(typeof obj == 'undefined'){obj = getFile()};
-    console.log(lookup);
     if(obj.favourites.indexOf(lookup) > -1){
         return true;
     }

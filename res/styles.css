@@ -16,7 +16,8 @@ body {
 .header {
   padding:10px;
   text-align: center;
-  background:linear-gradient(rgb(0,128,0,0.2), rgb(0,128,0,0.1)), url(headerBackgroundPattern.jpg);
+  background-color: rgb(255,255,255,0.9);
+  /*background:linear-gradient(rgb(0,128,0,0.2), rgb(0,128,0,0.1)), url(headerBackgroundPattern.jpg);*/
   min-width: 482px;
   /*background: #B0B6C0;*/
   color: #2A2B25;
